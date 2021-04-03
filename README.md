@@ -16,7 +16,7 @@ usb connectors(for example): https://www.aliexpress.com/item/1005002027124387.ht
 
 //connect the board, build & flash
 
->git clone  https://github.com/spectrum128_esp32_usb_host_pal_tv
+>git clone  https://github.com/sdima1357/spectrum128_esp32_usb_host_pal_tv
 
 >cd spectrum128_esp32_usb_host_pal_tv
 
