@@ -35,3 +35,4 @@ Put spectrum48 files here.Форматы: .TAP,.Z80,.SNA
 Z128
 Put spectrum128 files here spectrum128.Форматы: .TAP,.Z80,.SNA
 
+![image1](https://github.com/sdima1357/spectrum128_esp32_usb_host_pal_tv/blob/main/images/IMG_20210403_234328.jpg?raw=true)
