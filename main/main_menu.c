@@ -24,8 +24,8 @@ struct sMenuState
 
 char* strMenuArray [strMenuArraySize] =
 {
-		"  ZX48 ",
-		" ZX128 ",
+		"  Z48 ",
+		" Z128 ",
 		"  MP3  ",
 		" Paint ",
 		" Calibr",

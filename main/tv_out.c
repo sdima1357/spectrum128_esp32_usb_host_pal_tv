@@ -571,8 +571,6 @@ int initTables()
 // see https://github.com/rossumur/esp_8_bit/blob/master/README.md
 // credits to https://bitluni.net/esp32-color-pal
 
-#define VIDEO_PIN   26
-#define AUDIO_PIN   LEDC_HS_CH0_GPIO   // can be any pin
 
 
 lldesc_t _dma_desc[4] = {0};
@@ -739,11 +737,6 @@ void video_init_hw(int line_width, int samples_per_cc)
 	
     start_dma(line_width,samples_per_cc,1);
     
-#if 0
-    ledcSetup(0,2000000,7);    // 625000 khz is as fast as we go w 7 bits
-    ledcAttachPin(AUDIO_PIN, 0);
-    ledcWrite(0,0);
-#endif
     //  IR input if used
 #ifdef IR_PIN
     //pinMode(IR_PIN,INPUT);
@@ -832,11 +825,7 @@ int cnttt = 0;
 void HAL_DMACallback(uint16_t * pnt)
 {
 	
-			//	int64_t start_DMA_us = get_system_time_us();
-				//if(flagEnd!=1) return;
-				//flagEnd = 0;
 				cnttt ++;
-				//if(!(cnttt&1)) pnt0++;
 				lineN++;
 				if(lineN==LINES)
 				{
@@ -932,8 +921,8 @@ void HAL_DMACallback(uint16_t * pnt)
 								for(int t=0;t<W_SCALE;t++)
 								{
 									int k = x*W_SCALE+t+start;
-									uint16_t color = colorTableMain[flg][N][(k)&0x3];
-									PNTK = color;
+									//uint16_t color = colorTableMain[flg][N][(k)&0x3];
+									PNTK = arpfp[(k)&0x3];
 								}
 							}
 						}
