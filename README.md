@@ -36,3 +36,14 @@ Z128
 Put spectrum128 files here spectrum128.Форматы: .TAP,.Z80,.SNA
 
 ![image1](https://github.com/sdima1357/spectrum128_esp32_usb_host_pal_tv/blob/main/images/IMG_20210403_234328.jpg?raw=true)
+
+1 Analog color PAL-TV 50 Hz output: (GPIO25)
+2 Two  (bitband) USB-HID controllers (DP/DM) GPIO16/ GPIO17 - USB 1 GPIO18/ GPIO19 - USB 2
+3 Emulation  AY-3-8910 (GPIO27)
+4 SDCard control (.tap .z80 .sna) read pins:
+PIN_NUM_MISO 2
+PIN_NUM_MOSI 15
+PIN_NUM_CLK 14
+PIN_NUM_CS 13
+5 Screen width F4/F5
+6 Tape speed normal/fast F11/F12
