@@ -57,3 +57,16 @@ PIN_NUM_CS 13
 
 6 Tape speed normal/fast F11/F12
 
+
+Credits:
+
+PAL init & video PAL code from here:
+
+bitluni's lab
+https://bitluni.net/imprint https://bitluni.net/esp32-color-pal
+
+
+rossum
+https://rossumblog.com/
+https://github.com/rossumur/esp_8_bit
+
