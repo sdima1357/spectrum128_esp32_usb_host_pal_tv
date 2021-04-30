@@ -20,7 +20,11 @@ usb connectors(for example): https://www.aliexpress.com/item/1005002027124387.ht
 
 >cd spectrum128_esp32_usb_host_pal_tv
 
->make flash monitor
+>make flash monitor   
+
+// or if You don't have make
+>idf.py flash monitor
+
 
 SD card: Partition 1 type Start 2048 : W95 FAT32 (b)
 Attributes: 80
